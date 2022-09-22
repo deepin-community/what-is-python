@@ -1,0 +1,76 @@
+what-is-python (10) unstable; urgency=medium
+
+  * Stop building the python-is-python2 and python-dev-is-python2 packages.
+  * Bump standards version.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 11 Oct 2021 14:34:54 +0200
+
+what-is-python (9) unstable; urgency=medium
+
+  * Update package descriptions for the Debian 11 (bullseye) release.
+  * Bump package versions and provides.
+  * Provide pdb symlinks in the -dev packages.
+  * Also provide symlinks to the manual pages for all packages.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 02 Mar 2021 20:44:22 +0100
+
+what-is-python (8) unstable; urgency=medium
+
+  * python-is-python3: Add breaks/replaces for python-minimal.
+    Closes: #973635.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 03 Nov 2020 09:20:30 +0100
+
+what-is-python (7) unstable; urgency=medium
+
+  * Add breaks/replaces for python-minimal. Closes: #973273.
+  * Make the package descriptions more generic. Closes: #972650.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 30 Oct 2020 11:59:39 +0100
+
+what-is-python (6) unstable; urgency=medium
+
+  * Use binary version 3.8.6-N.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 19 Oct 2020 10:00:48 +0200
+
+what-is-python (5) unstable; urgency=medium
+
+  * First upload to Debian unstable. Closes: #970425.
+  * Use binary versions 2.7.18-N and 3.8.5-N.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 16 Sep 2020 12:42:14 +0200
+
+what-is-python (4) focal; urgency=medium
+
+  * Add python & python-dev provides on the python*-is-python2 packages.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Wed, 15 Apr 2020 11:45:44 +0100
+
+what-is-python (3) focal; urgency=medium
+
+  * Use python-is-python2 package name.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 26 Mar 2020 23:07:29 +0000
+
+what-is-python (2) focal; urgency=medium
+
+  * Change Multi-Arch headers from foreign to allowed, to patch the python
+    packages
+  * Use DEB_VERSION from dpkg include
+  * Use dh_installdocs to link doc dir
+  * Add command-not-found ignore headers on the python-dev packages
+  * Correct python-config symlink targets
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 19 Mar 2020 13:10:52 +0000
+
+what-is-python (1) focal; urgency=medium
+
+  [ Dimitri John Ledkov ]
+  * Initial Release.
+
+  [ Matthias Klose ]
+  * Add -dev packages providing symlinks for python-config and pydoc.
+  * Use binary versions 2.7.17-N and 3.8.2-N.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 17 Mar 2020 14:49:55 +0000

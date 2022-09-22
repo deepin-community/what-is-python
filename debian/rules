@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+include /usr/share/dpkg/default.mk
+
+v3 := 3.9.2-$(shell expr $(DEB_VERSION) - 8)
+
+%:
+	dh $@
+
+override_dh_installdocs:
+	dh_installdocs -ppython-is-python3 -ppython-dev-is-python3 --link-doc=python-is-python3
+
+override_dh_gencontrol:
+	dh_gencontrol -ppython-is-python3 -- -v$(v3)
+	dh_gencontrol -ppython-dev-is-python3 -- -v$(v3)

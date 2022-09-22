@@ -1,0 +1,49 @@
+Source: what-is-python
+Section: python
+Priority: optional
+Maintainer: Matthias Klose  <doko@debian.org>
+Uploaders: Dimitri John Ledkov <xnox@debian.org>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.6.0
+
+Package: python-is-python3
+Architecture: all
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python3
+Breaks: python-is-python2, python-is-python2-but-deprecated, python, python-minimal
+Replaces: python-is-python2, python-is-python2-but-deprecated, python, python-minimal
+XB-Cnf-Ignore-Commands: python
+Description: symlinks /usr/bin/python to python3
+ Starting with the Debian 11 (bullseye) and Ubuntu 20.04 LTS (focal)
+ releases, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python at all. Some
+ third-party code is now predominantly python3 based, yet may use
+ /usr/bin/python.
+ .
+ This is a convenience package which ships a symlink to point
+ the /usr/bin/python interpreter at the current default python3. It may
+ improve compatibility with other modern systems, whilst breaking some
+ obsolete or 3rd-party software.
+ .
+ No packages may declare dependencies on this package.
+
+Package: python-dev-is-python3
+Architecture: all
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python3-dev, python-is-python3
+Breaks: python-dev-is-python2, python-dev-is-python2-but-deprecated, python-dev
+Replaces: python-dev-is-python2, python-dev-is-python2-but-deprecated, python-dev
+XB-Cnf-Ignore-Commands: python-config
+Description: symlinks /usr/bin/python-config to python3-config
+ Starting with the Debian 11 (bullseye) and Ubuntu 20.04 LTS (focal)
+ releases, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python-config at all.
+ Some third-party code is now predominantly python3 based, yet may use
+ /usr/bin/python-config.
+ .
+ This is a convenience package which ships a symlink to point
+ /usr/bin/python-config script at the current default python3. It may
+ improve compatibility with other modern systems, whilst breaking some
+ obsolete or 3rd-party software.
+ .
+ No packages may declare dependencies on this package.
