@@ -1,6 +1,4 @@
 usr/bin/python3-config usr/bin/python-config
-usr/bin/pydoc3 usr/bin/pydoc
 usr/bin/pdb3 usr/bin/pdb
 usr/share/man/man1/python3-config.1.gz usr/share/man/man1/python-config.1.gz
-usr/share/man/man1/pydoc3.1.gz usr/share/man/man1/pydoc.1.gz
 usr/share/man/man1/pdb3.1.gz usr/share/man/man1/pdb.1.gz

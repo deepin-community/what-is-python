@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 include /usr/share/dpkg/default.mk
 
-v3 := 3.9.2-$(shell expr $(DEB_VERSION) - 8)
+v3 := 3.11.4-$(shell expr $(DEB_VERSION) - 13)
 
 %:
 	dh $@

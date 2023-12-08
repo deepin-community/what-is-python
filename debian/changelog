@@ -1,3 +1,32 @@
+what-is-python (14) unstable; urgency=medium
+
+  * python-is-python3: Add breaks/replaces to python-dev-is-python2.
+    Closes: #1034995.
+  * Bump standards version.
+  * Bump version to 11.4.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 13 Jun 2023 12:17:23 +0200
+
+what-is-python (13) unstable; urgency=medium
+
+  * Fix versioned breaks/replaces: Closes: #1027951.
+
+ -- Matthias Klose <doko@debian.org>  Sun, 08 Jan 2023 08:19:39 +0100
+
+what-is-python (12) unstable; urgency=medium
+
+  * Stop shipping pydoc in python-dev-is-python3.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 03 Jan 2023 14:02:39 +0100
+
+what-is-python (11) unstable; urgency=medium
+
+  * Bump version to 11.1.
+  * Bump standards version.
+  * Symlink pydoc to pydoc3. Closes: #985333.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 03 Jan 2023 10:15:51 +0100
+
 what-is-python (10) unstable; urgency=medium
 
   * Stop building the python-is-python2 and python-dev-is-python2 packages.
