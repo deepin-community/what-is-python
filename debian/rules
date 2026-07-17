@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
 include /usr/share/dpkg/default.mk
 
-v3 := 3.11.4-$(shell expr $(DEB_VERSION) - 13)
+DEB_VERSION_BASE	 = $(firstword $(subst +, ,$(subst ~, ,$(subst ., ,$(DEB_VERSION)))))
+DEB_VERSION_SUFFIX	 = $(patsubst $(DEB_VERSION_BASE)%,%,$(DEB_VERSION))
+
+v3 := 3.13.3-$(shell expr $(DEB_VERSION_BASE) - 14)$(DEB_VERSION_SUFFIX)
 
 %:
 	dh $@
