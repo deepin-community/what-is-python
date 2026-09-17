@@ -1,9 +1,3 @@
-what-is-python (15) unstable; urgency=medium
-
-  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
-
- -- tunaichao <tunaichao@uniontech.com>  Mon, 14 Sep 2026 09:13:18 +0800
-
 what-is-python (14) unstable; urgency=medium
 
   * python-is-python3: Add breaks/replaces to python-dev-is-python2.
