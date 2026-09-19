@@ -1,3 +1,13 @@
+what-is-python (15) unstable; urgency=medium
+
+  * Bump version to 13.3.
+  * Fix version mangling for NMU, stable or backports uploads, i.e. versions
+    with a suffix starting with a non-digit ([.+~]) (Andreas Beckmann).
+    Closes: #1069278.
+  * Bump standards version.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 09 Apr 2025 12:02:00 +0200
+
 what-is-python (14) unstable; urgency=medium
 
   * python-is-python3: Add breaks/replaces to python-dev-is-python2.

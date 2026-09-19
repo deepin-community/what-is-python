@@ -3,8 +3,9 @@ Section: python
 Priority: optional
 Maintainer: Matthias Klose  <doko@debian.org>
 Uploaders: Dimitri John Ledkov <xnox@debian.org>
-Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 12),
+  python3 (>= 3.13.3-1)
+Standards-Version: 4.7.2
 
 Package: python-is-python3
 Architecture: all
